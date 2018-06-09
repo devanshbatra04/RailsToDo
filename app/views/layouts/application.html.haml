@@ -6,13 +6,14 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .row-fluid
-      .span10.offset1
-        .hero-unit.text-center
-          %h1
-            ToDo
-          %p
-            Welcome to my ToDo app
+    .container
+      .row-fluid
+        .span10.offset1
+          .hero-unit.text-center
+            %h1
+              ToDo
+            %p
+              Welcome to my ToDo app
     = yield
     .container
       - if @tasks.empty?
